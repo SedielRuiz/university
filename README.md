@@ -27,6 +27,7 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 - Patrón de diseño - [Nota]: Se implemtó el patrón repositorio publicanod un scaffolding de mi autoría https://www.npmjs.com/package/scaffolding-pattern-repository
 - Database - [Nota]: Se puede correr la base de datos con las migraciones o ejecutar el archivo database.sql en la raíz del proyecto
+- Auth - [Nota]: Los servicios se encuentran bajo JWT, la tabla usuarios está simulada en el user.service
 - Swagger - [Nota]: Se encuentra implemntado swagger http://localhost:3015/doc
 
 ## Installation Docker
