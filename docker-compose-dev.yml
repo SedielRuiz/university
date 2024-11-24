@@ -1,0 +1,23 @@
+version: "1.0.0"
+services:
+    university:
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        ports:
+            - "3015:3015"
+        links:
+            - university-mysql
+        volumes:
+            - .: /home/app
+    university-mysql: 
+        image: mysql
+        ports:
+            - "3307:3306"
+        environment:
+            - MYSQL_ROOT_PASSWORD=123456789
+            - MYSQL_DATABASE=university
+        volumes:
+            - university-data: /var/lib/mysql
+volumes:
+    university-data: 
